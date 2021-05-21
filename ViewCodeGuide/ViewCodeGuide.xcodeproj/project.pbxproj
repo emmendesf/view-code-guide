@@ -97,12 +97,9 @@
 		C69E435A26582D94004E30A6 /* ViewCodeGuide */ = {
 			isa = PBXGroup;
 			children = (
-				C69E435B26582D94004E30A6 /* AppDelegate.swift */,
-				C69E435D26582D94004E30A6 /* SceneDelegate.swift */,
-				C69E435F26582D94004E30A6 /* ViewController.swift */,
-				C69E436426582D9C004E30A6 /* Assets.xcassets */,
-				C69E436626582D9C004E30A6 /* LaunchScreen.storyboard */,
-				C69E436926582D9C004E30A6 /* Info.plist */,
+				C69E43A826583A5E004E30A6 /* Application */,
+				C69E43A726583A39004E30A6 /* Source */,
+				C69E43A0265839F6004E30A6 /* Resources */,
 			);
 			path = ViewCodeGuide;
 			sourceTree = "<group>";
@@ -123,6 +120,33 @@
 				C69E437F26582D9D004E30A6 /* Info.plist */,
 			);
 			path = ViewCodeGuideUITests;
+			sourceTree = "<group>";
+		};
+		C69E43A0265839F6004E30A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C69E436426582D9C004E30A6 /* Assets.xcassets */,
+				C69E436626582D9C004E30A6 /* LaunchScreen.storyboard */,
+				C69E436926582D9C004E30A6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C69E43A726583A39004E30A6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C69E435F26582D94004E30A6 /* ViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C69E43A826583A5E004E30A6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C69E435B26582D94004E30A6 /* AppDelegate.swift */,
+				C69E435D26582D94004E30A6 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,7 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ViewCodeGuide/Info.plist;
+				INFOPLIST_FILE = ViewCodeGuide/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -443,7 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ViewCodeGuide/Info.plist;
+				INFOPLIST_FILE = ViewCodeGuide/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
