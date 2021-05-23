@@ -31,7 +31,6 @@ final class TitleSubtitleView: UIView {
         let titleLabel = UILabel()
         titleLabel.text = title
         titleLabel.backgroundColor = .gray
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
         
         return titleLabel
     }()
@@ -54,12 +53,16 @@ extension TitleSubtitleView: ViewCodeProtocol {
     }
     
     func setupConstraints() {
-        titleLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-
-        subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16).isActive = true
-        subtitleLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        subtitleLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        titleLabel.constraint { view in
+            [view.topAnchor.constraint(equalTo: topAnchor),
+             view.leadingAnchor.constraint(equalTo: leadingAnchor),
+             view.trailingAnchor.constraint(equalTo: trailingAnchor)]
+        }
+        
+        subtitleLabel.constraint { view in
+            [view.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
+             view.leadingAnchor.constraint(equalTo: leadingAnchor),
+             view.trailingAnchor.constraint(equalTo: trailingAnchor)]
+        }
     }
 }

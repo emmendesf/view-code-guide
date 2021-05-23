@@ -22,10 +22,7 @@ final class MyView: UIView {
     }
     
     lazy var titleSubtitleView: TitleSubtitleView = {
-        let view = TitleSubtitleView(title: "MyTitle", subtitle: "MySubtitle")
-        view.translatesAutoresizingMaskIntoConstraints = false
-        
-        return view
+        TitleSubtitleView(title: "MyTitle", subtitle: "MySubtitle")
     }()
 }
 
@@ -36,9 +33,11 @@ extension MyView: ViewCodeProtocol {
     }
     
     func setupConstraints() {
-        titleSubtitleView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 24).isActive = true
-        titleSubtitleView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
-        titleSubtitleView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
+        titleSubtitleView.constraint { view in
+            [view.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 24),
+             view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+             view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16)]
+        }
     }
     
     func additionalSetup() {
