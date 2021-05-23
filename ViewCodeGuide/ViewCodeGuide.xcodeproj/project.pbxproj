@@ -143,11 +143,11 @@
 		C69E43A726583A39004E30A6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C69E4416265AD7B5004E30A6 /* Component */,
+				C69E4415265AD7B0004E30A6 /* Extension */,
+				C69E4414265AD7AB004E30A6 /* Protocol */,
 				C69E435F26582D94004E30A6 /* ViewController.swift */,
 				C69E43AC26583B52004E30A6 /* MyView.swift */,
-				C69E4405265A9C66004E30A6 /* TitleSubtitleView.swift */,
-				C69E440A265A9E3D004E30A6 /* ViewCodeProtocol.swift */,
-				C69E440F265AA257004E30A6 /* UIView+Extensions.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -159,6 +159,30 @@
 				C69E435D26582D94004E30A6 /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		C69E4414265AD7AB004E30A6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C69E440A265A9E3D004E30A6 /* ViewCodeProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C69E4415265AD7B0004E30A6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C69E440F265AA257004E30A6 /* UIView+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C69E4416265AD7B5004E30A6 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				C69E4405265A9C66004E30A6 /* TitleSubtitleView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

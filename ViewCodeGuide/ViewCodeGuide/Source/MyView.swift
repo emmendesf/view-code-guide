@@ -11,8 +11,6 @@ final class MyView: UIView {
     
     init() {
         super.init(frame: .zero)
-        self.backgroundColor = .orange
-        
         build()
     }
     
