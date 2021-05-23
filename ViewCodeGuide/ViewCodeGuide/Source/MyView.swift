@@ -22,36 +22,20 @@ final class MyView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    lazy var titleLabel: UILabel = {
-        let titleLabel = UILabel()
-        titleLabel.text = "My Title"
-        titleLabel.backgroundColor = .gray
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+    lazy var titleSubtitleView: TitleSubtitleView = {
+        let view = TitleSubtitleView(title: "MyTitle", subtitle: "MySubtitle")
+        view.translatesAutoresizingMaskIntoConstraints = false
         
-        return titleLabel
-    }()
-    
-    lazy var subtitleLabel: UILabel = {
-        let subtitleLabel = UILabel()
-        subtitleLabel.text = "My Subtitle"
-        subtitleLabel.backgroundColor = .gray
-        subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        return subtitleLabel
+        return view
     }()
     
     func setupHierarchy() {
-        addSubview(titleLabel)
-        addSubview(subtitleLabel)
+        addSubview(titleSubtitleView)
     }
     
     func setupConstraints() {
-        titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 24).isActive = true
-        titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
-
-        subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16).isActive = true
-        subtitleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
-        subtitleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
+        titleSubtitleView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 24).isActive = true
+        titleSubtitleView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
+        titleSubtitleView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
     }
 }
