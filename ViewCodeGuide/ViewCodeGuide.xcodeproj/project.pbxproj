@@ -17,6 +17,7 @@
 		C69E43AD26583B52004E30A6 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E43AC26583B52004E30A6 /* MyView.swift */; };
 		C69E4406265A9C66004E30A6 /* TitleSubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4405265A9C66004E30A6 /* TitleSubtitleView.swift */; };
 		C69E440B265A9E3D004E30A6 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E440A265A9E3D004E30A6 /* ViewCodeProtocol.swift */; };
+		C69E4410265AA257004E30A6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E440F265AA257004E30A6 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C69E43AC26583B52004E30A6 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		C69E4405265A9C66004E30A6 /* TitleSubtitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleView.swift; sourceTree = "<group>"; };
 		C69E440A265A9E3D004E30A6 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
+		C69E440F265AA257004E30A6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				C69E43AC26583B52004E30A6 /* MyView.swift */,
 				C69E4405265A9C66004E30A6 /* TitleSubtitleView.swift */,
 				C69E440A265A9E3D004E30A6 /* ViewCodeProtocol.swift */,
+				C69E440F265AA257004E30A6 /* UIView+Extensions.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69E4410265AA257004E30A6 /* UIView+Extensions.swift in Sources */,
 				C69E43AD26583B52004E30A6 /* MyView.swift in Sources */,
 				C69E440B265A9E3D004E30A6 /* ViewCodeProtocol.swift in Sources */,
 				C69E436026582D94004E30A6 /* ViewController.swift in Sources */,
