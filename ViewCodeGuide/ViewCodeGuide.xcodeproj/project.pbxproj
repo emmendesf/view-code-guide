@@ -16,6 +16,7 @@
 		C69E437E26582D9D004E30A6 /* ViewCodeGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E437D26582D9D004E30A6 /* ViewCodeGuideUITests.swift */; };
 		C69E43AD26583B52004E30A6 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E43AC26583B52004E30A6 /* MyView.swift */; };
 		C69E4406265A9C66004E30A6 /* TitleSubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4405265A9C66004E30A6 /* TitleSubtitleView.swift */; };
+		C69E440B265A9E3D004E30A6 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E440A265A9E3D004E30A6 /* ViewCodeProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C69E437F26582D9D004E30A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C69E43AC26583B52004E30A6 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		C69E4405265A9C66004E30A6 /* TitleSubtitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleView.swift; sourceTree = "<group>"; };
+		C69E440A265A9E3D004E30A6 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				C69E435F26582D94004E30A6 /* ViewController.swift */,
 				C69E43AC26583B52004E30A6 /* MyView.swift */,
 				C69E4405265A9C66004E30A6 /* TitleSubtitleView.swift */,
+				C69E440A265A9E3D004E30A6 /* ViewCodeProtocol.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C69E43AD26583B52004E30A6 /* MyView.swift in Sources */,
+				C69E440B265A9E3D004E30A6 /* ViewCodeProtocol.swift in Sources */,
 				C69E436026582D94004E30A6 /* ViewController.swift in Sources */,
 				C69E435C26582D94004E30A6 /* AppDelegate.swift in Sources */,
 				C69E4406265A9C66004E30A6 /* TitleSubtitleView.swift in Sources */,
