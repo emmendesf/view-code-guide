@@ -57,14 +57,14 @@ override func loadView() {
 # ✋🏻 Hands On!
 
 
-- Move view configuration to separated view file
-- Build title and subtitle label on view's init
-- Separate view creation in methods
-- Create TitleSubtitleView component
-- Create ViewCodeProtocol
-- Implement ViewCodeProtocol
-- Create constraint assistant
-- Refactor constraint setup using new extension method
+- [Move view configuration to separated view file](https://github.com/emmendesf/view-code-guide/commit/6fb1c12ce115adca0c390773bef9b2f811c0f253)
+- [Build title and subtitle label on view's init](https://github.com/emmendesf/view-code-guide/commit/d466007d7f455b0500c550df85ef1dd8bdb54777)
+- [Separate view creation in methods](https://github.com/emmendesf/view-code-guide/commit/460a8a4583561308f23969869187c528bdba0d81)
+- [Create TitleSubtitleView component](https://github.com/emmendesf/view-code-guide/commit/97cac76457dcba1f38582291abfcac65da6dd6a6)
+- [Create ViewCodeProtocol](https://github.com/emmendesf/view-code-guide/commit/f43956acb863f0ca62bbbd83534cc704fd36ca75)
+- [Implement ViewCodeProtocol](https://github.com/emmendesf/view-code-guide/commit/b7a76a1c50c70c8cd733eb38cb7e6dabf9e9c34a)
+- [Create constraint assistant](https://github.com/emmendesf/view-code-guide/commit/f6f638415745071c7cc76f4eda7d26406e0d152e)
+- [Refactor constraint setup using new extension method](https://github.com/emmendesf/view-code-guide/commit/d4f8df13505df22ad2c5c9047bcca6090decb5a0)
 
 # ⏮ Recap
 
