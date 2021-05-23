@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PackageViewController.swift
 //  ViewCodeGuide
 //
 //  Created by Emerson Mendes Filho on 21/05/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PackageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     }
 
     override func loadView() {
-        self.view = MyView()
+        self.view = PackageView()
     }
 }
 

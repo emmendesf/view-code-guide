@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MyView: UIView {
+final class PackageView: UIView {
     
     init() {
         super.init(frame: .zero)
@@ -24,7 +24,7 @@ final class MyView: UIView {
     }()
 }
 
-extension MyView: ViewCodeProtocol {
+extension PackageView: ViewCodeProtocol {
     
     func setupHierarchy() {
         addSubview(titleSubtitleView)

@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		C69E435C26582D94004E30A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E435B26582D94004E30A6 /* AppDelegate.swift */; };
 		C69E435E26582D94004E30A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E435D26582D94004E30A6 /* SceneDelegate.swift */; };
-		C69E436026582D94004E30A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E435F26582D94004E30A6 /* ViewController.swift */; };
+		C69E436026582D94004E30A6 /* PackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E435F26582D94004E30A6 /* PackageViewController.swift */; };
 		C69E436526582D9C004E30A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69E436426582D9C004E30A6 /* Assets.xcassets */; };
 		C69E436826582D9C004E30A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69E436626582D9C004E30A6 /* LaunchScreen.storyboard */; };
 		C69E437326582D9C004E30A6 /* ViewCodeGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E437226582D9C004E30A6 /* ViewCodeGuideTests.swift */; };
 		C69E437E26582D9D004E30A6 /* ViewCodeGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E437D26582D9D004E30A6 /* ViewCodeGuideUITests.swift */; };
-		C69E43AD26583B52004E30A6 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E43AC26583B52004E30A6 /* MyView.swift */; };
+		C69E43AD26583B52004E30A6 /* PackageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E43AC26583B52004E30A6 /* PackageView.swift */; };
 		C69E4406265A9C66004E30A6 /* TitleSubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4405265A9C66004E30A6 /* TitleSubtitleView.swift */; };
 		C69E440B265A9E3D004E30A6 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E440A265A9E3D004E30A6 /* ViewCodeProtocol.swift */; };
 		C69E4410265AA257004E30A6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E440F265AA257004E30A6 /* UIView+Extensions.swift */; };
@@ -42,7 +42,7 @@
 		C69E435826582D94004E30A6 /* ViewCodeGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewCodeGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69E435B26582D94004E30A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C69E435D26582D94004E30A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C69E435F26582D94004E30A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C69E435F26582D94004E30A6 /* PackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageViewController.swift; sourceTree = "<group>"; };
 		C69E436426582D9C004E30A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C69E436726582D9C004E30A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C69E436926582D9C004E30A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		C69E437926582D9D004E30A6 /* ViewCodeGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewCodeGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69E437D26582D9D004E30A6 /* ViewCodeGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeGuideUITests.swift; sourceTree = "<group>"; };
 		C69E437F26582D9D004E30A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C69E43AC26583B52004E30A6 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		C69E43AC26583B52004E30A6 /* PackageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageView.swift; sourceTree = "<group>"; };
 		C69E4405265A9C66004E30A6 /* TitleSubtitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleView.swift; sourceTree = "<group>"; };
 		C69E440A265A9E3D004E30A6 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		C69E440F265AA257004E30A6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -145,11 +145,10 @@
 		C69E43A726583A39004E30A6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C69E441F265AE2CF004E30A6 /* Feature */,
 				C69E4416265AD7B5004E30A6 /* Component */,
 				C69E4415265AD7B0004E30A6 /* Extension */,
 				C69E4414265AD7AB004E30A6 /* Protocol */,
-				C69E435F26582D94004E30A6 /* ViewController.swift */,
-				C69E43AC26583B52004E30A6 /* MyView.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -186,6 +185,23 @@
 				C69E441A265AE1D3004E30A6 /* PagedCarouselView.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		C69E441F265AE2CF004E30A6 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				C69E4420265AE2D5004E30A6 /* Package */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		C69E4420265AE2D5004E30A6 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C69E435F26582D94004E30A6 /* PackageViewController.swift */,
+				C69E43AC26583B52004E30A6 /* PackageView.swift */,
+			);
+			path = Package;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,9 +334,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C69E4410265AA257004E30A6 /* UIView+Extensions.swift in Sources */,
-				C69E43AD26583B52004E30A6 /* MyView.swift in Sources */,
+				C69E43AD26583B52004E30A6 /* PackageView.swift in Sources */,
 				C69E440B265A9E3D004E30A6 /* ViewCodeProtocol.swift in Sources */,
-				C69E436026582D94004E30A6 /* ViewController.swift in Sources */,
+				C69E436026582D94004E30A6 /* PackageViewController.swift in Sources */,
 				C69E441B265AE1D3004E30A6 /* PagedCarouselView.swift in Sources */,
 				C69E435C26582D94004E30A6 /* AppDelegate.swift in Sources */,
 				C69E4406265A9C66004E30A6 /* TitleSubtitleView.swift in Sources */,
