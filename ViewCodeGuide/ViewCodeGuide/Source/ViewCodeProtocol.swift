@@ -9,6 +9,7 @@ protocol ViewCodeProtocol {
     
     func setupHierarchy()
     func setupConstraints()
+    func additionalSetup()
 }
 
 extension ViewCodeProtocol {
@@ -16,5 +17,8 @@ extension ViewCodeProtocol {
     func build() {
         setupHierarchy()
         setupConstraints()
+        additionalSetup()
     }
+    
+    func additionalSetup() { }
 }

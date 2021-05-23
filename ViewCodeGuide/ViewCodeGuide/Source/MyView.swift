@@ -13,8 +13,7 @@ final class MyView: UIView {
         super.init(frame: .zero)
         self.backgroundColor = .orange
         
-        setupHierarchy()
-        setupConstraints()
+        build()
     }
     
     @available(*, unavailable)
@@ -28,6 +27,9 @@ final class MyView: UIView {
         
         return view
     }()
+}
+
+extension MyView: ViewCodeProtocol {
     
     func setupHierarchy() {
         addSubview(titleSubtitleView)
@@ -37,5 +39,9 @@ final class MyView: UIView {
         titleSubtitleView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 24).isActive = true
         titleSubtitleView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
         titleSubtitleView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
+    }
+    
+    func additionalSetup() {
+        backgroundColor = .orange
     }
 }

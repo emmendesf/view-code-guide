@@ -19,8 +19,7 @@ final class TitleSubtitleView: UIView {
         
         super.init(frame: .zero)
         
-        setupHierarchy()
-        setupConstraints()
+        build()
     }
     
     @available(*, unavailable)
@@ -45,6 +44,9 @@ final class TitleSubtitleView: UIView {
         
         return subtitleLabel
     }()
+}
+
+extension TitleSubtitleView: ViewCodeProtocol {
     
     func setupHierarchy() {
         addSubview(titleLabel)
