@@ -4,15 +4,15 @@
 # 👷🏽‍♂️ How to build layouts using iOS
 
 
-| ## Storyboard        | ## Xib           | ## ViewCode  |  ## SwiftUI |
-| --------------------- |:--------------:||:-----------------:| ------------:|
+| Storyboard | Xib | ViewCode | SwiftUI |
+| --------------------- |:--------------:|:-----------------:| ------------:|
 | Graphical Interface | Graphical Interface | Code Interface |  Code Interface |
-| Graphical Navigation | Medium learning curve | Medium learning curve | Medium/High learning curve |
-| Low learning curve | Hard to solve merge conflicts | Easy to solve merge conflicts | Easy to solve merge conflicts |
-| Hard to solve merge conflicts | Easier than storyboard to reuse components | Easy to reuse components | Easy to reuse components | 
-| Hard to reuse components | Scale better than Storyboard | Scales well | Scales well | 
-| Doesn't scale well | | |New iOS Technology |
-| | | | Available iOS 13+ |
+| Graphical Navigation | Code Navigation | Code Navigation | Code Navigation |
+| Low learning curve | Medium learning curve | Medium learning curve | Medium/High learning curve |
+| Hard to solve merge conflicts | Hard to solve merge conflicts | Easy to solve merge conflicts | Easy to solve merge conflicts |
+| Hard to reuse components | Easier than storyboard to reuse components | Easy to reuse components | Easy to reuse components | 
+| Doesn't Scale well | Scales better than Storyboard | Scales well | Scales well | 
+| Available iOS 5+ | Not sure, but older than Storyboards | Available in all versions | Available iOS 13+ |
 
 # ⁉️ Why ViewCode
 
