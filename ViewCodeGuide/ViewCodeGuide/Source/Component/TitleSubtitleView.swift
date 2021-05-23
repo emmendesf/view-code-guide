@@ -30,7 +30,7 @@ final class TitleSubtitleView: UIView {
     private lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.text = title
-        titleLabel.backgroundColor = .gray
+        titleLabel.font = .preferredFont(forTextStyle: .headline)
         
         return titleLabel
     }()
@@ -38,7 +38,7 @@ final class TitleSubtitleView: UIView {
     private lazy var subtitleLabel: UILabel = {
         let subtitleLabel = UILabel()
         subtitleLabel.text = subtitle
-        subtitleLabel.backgroundColor = .gray
+        subtitleLabel.font = .preferredFont(forTextStyle: .caption2)
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
         
         return subtitleLabel
@@ -60,9 +60,10 @@ extension TitleSubtitleView: ViewCodeProtocol {
         }
         
         subtitleLabel.constraint { view in
-            [view.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
+            [view.topAnchor.constraint(equalTo: titleLabel.bottomAnchor),
              view.leadingAnchor.constraint(equalTo: leadingAnchor),
-             view.trailingAnchor.constraint(equalTo: trailingAnchor)]
+             view.trailingAnchor.constraint(equalTo: trailingAnchor),
+             view.bottomAnchor.constraint(equalTo: bottomAnchor)]
         }
     }
 }

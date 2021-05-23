@@ -10,9 +10,12 @@ import UIKit
 final class HeaderView: UIView {
     
     private let title: String
+    private let textStyle: UIFont.TextStyle
     
-    init(title: String) {
+    init(title: String,
+         textStyle: UIFont.TextStyle = .headline) {
         self.title = title
+        self.textStyle = textStyle
         super.init(frame: .zero)
         build()
     }
@@ -25,7 +28,8 @@ final class HeaderView: UIView {
     private lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.text = title
-        titleLabel.font = .preferredFont(forTextStyle: .title1)
+        titleLabel.textAlignment = .center
+        titleLabel.font = .preferredFont(forTextStyle: textStyle)
         
         return titleLabel
     }()

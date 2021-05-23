@@ -25,12 +25,13 @@ final class PackagePageView: UIView {
     private lazy var containerStackView: UIStackView = {
         let view = UIStackView()
         view.axis = .vertical
+        view.spacing = 16
         
         return view
     }()
     
     private lazy var headerView: HeaderView = {
-        HeaderView(title: viewData.title)
+        HeaderView(title: viewData.title, textStyle: .title3)
     }()
 }
 

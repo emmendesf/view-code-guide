@@ -8,14 +8,19 @@
 import UIKit
 
 class PackageViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupNavigation()
     }
-
+    
     override func loadView() {
         self.view = PackageView()
+    }
+    
+    func setupNavigation() {
+        title = "Pacotes"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
 

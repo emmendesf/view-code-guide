@@ -44,7 +44,7 @@ final class PagedCarouselView: UIView {
     }()
     
     init(pageViews: [UIView],
-                didSelectPage: ((Int) -> Void)? = nil) {
+         didSelectPage: ((Int) -> Void)? = nil) {
         self.pageViews = pageViews
         self.didSelectPage = didSelectPage
         super.init(frame: .zero)
@@ -83,7 +83,6 @@ extension PagedCarouselView: ViewCodeProtocol {
     func setupConstraints() {
         scrollView.constraint { view in
             [view.leadingAnchor.constraint(equalTo: leadingAnchor),
-             view.bottomAnchor.constraint(equalTo: bottomAnchor),
              view.trailingAnchor.constraint(equalTo: trailingAnchor),
              view.topAnchor.constraint(equalTo: topAnchor)]
         }
@@ -103,8 +102,9 @@ extension PagedCarouselView: ViewCodeProtocol {
         }
         
         pageControl.constraint { view in
-            [view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-             view.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16),
+            [view.topAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: 16),
+             view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+             view.bottomAnchor.constraint(equalTo: bottomAnchor),
              view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16)]
         }
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C61D0526265AF1980030EA0D /* PackageViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61D0525265AF1980030EA0D /* PackageViewData.swift */; };
 		C69E435C26582D94004E30A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E435B26582D94004E30A6 /* AppDelegate.swift */; };
 		C69E435E26582D94004E30A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E435D26582D94004E30A6 /* SceneDelegate.swift */; };
 		C69E436026582D94004E30A6 /* PackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E435F26582D94004E30A6 /* PackageViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C61D0525265AF1980030EA0D /* PackageViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageViewData.swift; sourceTree = "<group>"; };
 		C69E435826582D94004E30A6 /* ViewCodeGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewCodeGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69E435B26582D94004E30A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C69E435D26582D94004E30A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				C69E4437265AED34004E30A6 /* PackagePageViewData.swift */,
 				C69E443C265AED3E004E30A6 /* PackageItemViewData.swift */,
+				C61D0525265AF1980030EA0D /* PackageViewData.swift */,
 			);
 			path = ViewData;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				C69E4406265A9C66004E30A6 /* TitleSubtitleView.swift in Sources */,
 				C69E4432265AEC40004E30A6 /* PackagePageView.swift in Sources */,
 				C69E435E26582D94004E30A6 /* SceneDelegate.swift in Sources */,
+				C61D0526265AF1980030EA0D /* PackageViewData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
